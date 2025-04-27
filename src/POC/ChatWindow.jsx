@@ -13,7 +13,6 @@ function ChatWindow() {
     const { userData } = useAuth();
 
     const receiverId = params?.uniqueId;
-
     const chatId = userData?.id && receiverId 
         ? userData.id > receiverId 
             ? `${userData.id}-${receiverId}` 
@@ -91,25 +90,23 @@ function ChatWindow() {
 
     if (!receiverId) {
         return (
-            <div className="flex-1 flex flex-col items-center justify-center bg-[#f9f9ff]">
+            <section className="w-full h-full flex flex-col gap-4 items-center justify-center">
                 <MessageSquareText className="w-16 h-16 text-indigo-300" strokeWidth={1.2} />
-                <p className="mt-4 text-indigo-400 text-center">
-                    Select a contact<br />to start chatting
-                </p>
-            </div>
+                <p className="mt-4 text-indigo-400 text-center">Select a contact<br />to start chatting</p>
+            </section>
         );
     }
 
     if (!secondUser) {
         return (
-            <div className="flex-1 flex items-center justify-center bg-[#f9f9ff]">
+            <section className="w-full h-full flex flex-col gap-4 items-center justify-center">
                 <p className="text-indigo-400">Loading conversation...</p>
-            </div>
+            </section>
         );
     }
 
     return (
-        <div className="flex-1 flex flex-col bg-[#f9f9ff]">
+        <section className="w-full h-full flex flex-col bg-gradient-to-br from-[#a8f0f8] to-[#ffcbf2]">
             {/* Header */}
             <div className="bg-white p-4 border-b border-indigo-100 flex items-center gap-3">
                 <img 
@@ -170,7 +167,7 @@ function ChatWindow() {
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
