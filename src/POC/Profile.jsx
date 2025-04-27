@@ -17,16 +17,16 @@ function Profile(props) {
   }
 
   return (
-    <div className='w-full h-full bg-[#f8fafc]'> 
+    <div className='w-full h-full bg-gradient-to-br from-[#a8f0f8] to-[#ffcbf2]'>
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-5 px-6 flex items-center gap-4">
+      <div className="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white p-5 flex items-center gap-4">
         <button 
           onClick={props.onBack}
           className="p-1 rounded-full hover:bg-white/10 transition-colors"
         >
           <ArrowLeft size={20} />
         </button>
-        <h1 className="text-xl font-medium">Profile Settings</h1>
+        <h1 className="text-2xl font-semibold">Profile Settings</h1>
       </div>
 
       {/* Profile Content */}
