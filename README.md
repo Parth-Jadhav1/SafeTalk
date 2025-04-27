@@ -79,7 +79,6 @@ To run this project locally, follow these steps:
 - `src/`: Contains all the React components and application logic.
 - `src/firebase/`: Contains Firebase configuration and services.
 - `src/components/`: Contains reusable components like ChatWindow, ChatPanel, Profile, etc.
-- `src/styles/`: Contains any global styles (if any).
 
 ---
 
