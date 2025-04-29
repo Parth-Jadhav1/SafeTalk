@@ -92,12 +92,6 @@ To run this project locally, follow these steps:
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## Acknowledgements
 
 - Firebase for providing an easy-to-use backend solution.
