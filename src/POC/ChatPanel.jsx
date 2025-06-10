@@ -3,7 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { CircleFadingPlus, MessageSquare, Search, User } from 'lucide-react';
 import Profile from './Profile';
-import UserCard from './userCard';
+import UserCard from './UserCard';
 import { useAuth } from './AuthContext';
 
 function ChatPanel({ onSelectUser }) {
